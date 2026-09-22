@@ -1,0 +1,124 @@
+id: x-b-1-browser-overview
+
+data:
+  - name:
+      en: picking a browser
+      cn: 如何选择
+    qa:
+      - id: which-is-most-private
+        question:
+          en: Which browser is the most private?
+          cn: 哪个浏览器最注重隐私？
+        answer:
+          en: Firefox, Brave, Tor Browser, LibreWolf, and DuckDuckGo all have strong privacy defaults. Tor Browser is the strongest (Tor network + isolation); Brave is the best mainstream option (Shields, VPN, Firewall).
+          cn: Firefox、Brave、Tor Browser、LibreWolf、DuckDuckGo 都有强隐私默认。Tor Browser 最强（Tor 网络 + 隔离）；Brave 是最好的主流选择（Shields、VPN、防火墙）。
+        confidence: 8
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: which-is-fastest
+        question:
+          en: Which browser is the fastest?
+          cn: 哪个浏览器最快？
+        answer:
+          en: Chrome and Edge are typically the fastest on web-platform benchmarks. Safari is the fastest on Apple silicon due to hardware integration. Firefox is competitive but historically slightly behind on cold-start.
+          cn: Chrome 和 Edge 在网页平台基准测试中通常最快。Safari 在 Apple silicon 上最快，因为硬件集成。Firefox 性能有竞争力，但冷启动历史上略慢。
+        confidence: 7
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: which-for-apple
+        question:
+          en: Which browser is best on Apple devices?
+          cn: Apple 设备上哪个浏览器最好？
+        answer:
+          en: Safari is the default and gets the best battery life on macOS / iOS due to Apple silicon integration. Chrome is a strong alternative if you want cross-device sync.
+          cn: Safari 是默认选择，由于 Apple silicon 集成，在 macOS / iOS 上电池续航最佳。Chrome 是想要跨设备同步的强力替代选择。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: which-for-ios
+        question:
+          en: Why do all iOS browsers use WebKit?
+          cn: 为什么所有 iOS 浏览器都用 WebKit？
+        answer:
+          en: Apple policy: every browser on iOS / iPadOS must use WebKit under the hood. Chrome for iOS, Brave for iOS, Firefox for iOS all use WebKit — they differ only in UI, sync, and feature set.
+          cn: Apple 政策：iOS / iPadOS 上的每个浏览器底层必须用 WebKit。Chrome for iOS、Brave for iOS、Firefox for iOS 都用 WebKit —— 它们只在 UI、同步与功能集上有差异。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: which-for-linux
+        question:
+          en: Which browser is best on Linux?
+          cn: Linux 上哪个浏览器最好？
+        answer:
+          en: Chromium-based browsers (Chrome, Brave, Vivaldi) lead. Firefox is the long-time default on many distros. Zen and LibreWolf are Firefox-based alternatives.
+          cn: Chromium 系（Chrome、Brave、Vivaldi）领先。Firefox 在许多发行版上是长期默认。Zen 与 LibreWolf 是基于 Firefox 的替代选择。
+        confidence: 8
+        reference:
+          - docs/1-browser-overview.en.md
+
+  - name:
+      en: concepts
+      cn: 概念
+    qa:
+      - id: what-is-gecko
+        question:
+          en: What is Gecko?
+          cn: 什么是 Gecko？
+        answer:
+          en: Mozilla's web layout engine. Powers Firefox, Zen, LibreWolf, and Tor Browser. Independent of Chromium and WebKit.
+          cn: Mozilla 的网页排版引擎。支撑 Firefox、Zen、LibreWolf、Tor Browser。独立于 Chromium 与 WebKit。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: what-is-blink
+        question:
+          en: What is Blink?
+          cn: 什么是 Blink？
+        answer:
+          en: Google's layout engine, forked from WebKit in 2013. Powers Chrome, Edge, Brave, Arc, Vivaldi, Opera. Holds ~76% of desktop share.
+          cn: Google 的排版引擎，2013 年从 WebKit fork。支撑 Chrome、Edge、Brave、Arc、Vivaldi、Opera。占据约 76% 桌面份额。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: what-is-manifest-v3
+        question:
+          en: What is Manifest V3?
+          cn: 什么是 Manifest V3？
+        answer:
+          en: The current version of the Chrome / WebExtensions extension API. Replaces Manifest V2 (which Chrome deprecated in 2024). Firefox 138 lands MV3 in stable (Aug 2026); Safari MV3 since Safari 16.
+          cn: Chrome / WebExtensions 扩展 API 的当前版本。取代 Chrome 于 2024 年弃用的 Manifest V2。Firefox 138（2026 年 8 月）在稳定版落地 MV3；Safari 自 Safari 16 起支持 MV3。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+  - name:
+      en: not a browser
+      cn: 不是浏览器
+    qa:
+      - id: is-curl-a-browser
+        question:
+          en: Is curl a web browser?
+          cn: curl 是浏览器吗？
+        answer:
+          en: No — curl is a CLI HTTP client. It fetches URLs but doesn't render HTML or run JavaScript.
+          cn: 不是 —— curl 是 CLI HTTP 客户端。它获取 URL，但不渲染 HTML 或运行 JavaScript。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md
+
+      - id: is-lynx-a-browser
+        question:
+          en: Is Lynx a web browser?
+          cn: Lynx 是浏览器吗？
+        answer:
+          en: Yes — Lynx is a terminal-based text browser. Still maintained; popular for accessibility and minimalism. Not covered in depth here.
+          cn: 是的 —— Lynx 是基于终端的文本浏览器。仍在维护；受无障碍与极简主义者欢迎。本页不深入。
+        confidence: 9
+        reference:
+          - docs/1-browser-overview.en.md

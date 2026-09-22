@@ -1,0 +1,103 @@
+id: x-b-0-latest-browsers
+
+data:
+  - name:
+      en: overview
+      cn: 概览
+    qa:
+      - id: what-is-this-article
+        question:
+          en: What is this article?
+          cn: 这篇文章讲什么？
+        answer:
+          en: A quarterly snapshot of recent web-browser releases and trends. Latest: Firefox 138 (Aug 2026), Chrome 138 (Jul 2026), Safari 19 (Jun 2026), Brave 1.80, Arc 2.0, Zen 1.14.
+          cn: 网页浏览器近期发布与趋势的季度快照。最新：Firefox 138（2026 年 8 月）、Chrome 138（2026 年 7 月）、Safari 19（2026 年 6 月）、Brave 1.80、Arc 2.0、Zen 1.14。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+          - docs/0-latest-browsers.cn.md
+
+      - id: biggest-trend
+        question:
+          en: What is the biggest trend in 2026?
+          cn: 2026 年最大的趋势是什么？
+        answer:
+          en: AI integration is now table stakes — every major browser ships an AI assistant. The 2026 shift is toward local / on-device models where possible.
+          cn: AI 集成已成基本盘 —— 每个主流浏览器都自带 AI 助手。2026 年的转变是尽可能本地 / 设备端模型。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+
+      - id: chromium-monoculture
+        question:
+          en: Is the Chromium monoculture still growing?
+          cn: Chromium 单一化还在增长吗？
+        answer:
+          en: Flat at ~76% desktop share in Q2 2026. Firefox's decline has stabilized since 2024 on Manifest V3 + renewed privacy focus.
+          cn: 2026 Q2 桌面份额平稳在约 76%。Firefox 自 2024 年起下降趋稳，得益于 Manifest V3 与对隐私的重新聚焦。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+
+  - name:
+      en: breaking changes
+      cn: 破坏性变更
+    qa:
+      - id: firefox-mv3
+        question:
+          en: When did Firefox ship Manifest V3?
+          cn: Firefox 什么时候发布 Manifest V3？
+        answer:
+          en: Firefox 138 (Aug 2026) is the first stable release with Manifest V3 enabled. Some legacy V2-only extensions stop working or need V3 polyfills.
+          cn: Firefox 138（2026 年 8 月）是首个启用 Manifest V3 的稳定版。一些仅 V2 的遗留扩展会停止工作或需要 V3 polyfill。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+
+      - id: safari-macos-13
+        question:
+          en: What's the minimum macOS for Safari 19?
+          cn: Safari 19 最低要求什么 macOS？
+        answer:
+          en: macOS 13 Ventura. Safari 19 dropped support for macOS 12 Monterey.
+          cn: macOS 13 Ventura。Safari 19 停止支持 macOS 12 Monterey。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+
+      - id: chrome-old-linux
+        question:
+          en: Did Chrome drop old Linux support?
+          cn: Chrome 停止支持老 Linux 了吗？
+        answer:
+          en: Yes — Chrome 138 requires glibc 2.28+ on Linux. Older distributions need updates or alternative browsers.
+          cn: 是的 —— Chrome 138 在 Linux 上要求 glibc 2.28+。较老的发行版需要更新或换浏览器。
+        confidence: 9
+        reference:
+          - docs/0-latest-browsers.en.md
+
+  - name:
+      en: what to watch
+      cn: 值得关注
+    qa:
+      - id: webgpu-firefox
+        question:
+          en: When does WebGPU ship in Firefox?
+          cn: WebGPU 什么时候在 Firefox 中发布？
+        answer:
+          en: Firefox 141 (Sep 2026) is the planned stable release with WebGPU enabled by default. The last of the major engines.
+          cn: Firefox 141（2026 年 9 月）计划默认启用 WebGPU 的稳定版。最后一个主流引擎。
+        confidence: 8
+        reference:
+          - docs/0-latest-browsers.en.md
+
+      - id: arc-dia
+        question:
+          en: Is The Browser Company building a new browser?
+          cn: The Browser Company 在做新浏览器吗？
+        answer:
+          en: Reports indicate Arc's makers are working on "Dia", an AI-first browser. No public timeline yet.
+          cn: 据报道 Arc 的母公司正在做 "Dia"，一款 AI 优先的浏览器。暂无公开时间表。
+        confidence: 6
+        reference:
+          - docs/0-latest-browsers.en.md

@@ -1,0 +1,170 @@
+id: x-b-2-firefox
+
+data:
+  - name:
+      en: overview
+      cn: 概览
+    qa:
+      - id: what-is-firefox
+        question:
+          en: What is Firefox?
+          cn: 什么是 Firefox？
+        answer:
+          en: A modern web browser built by the Mozilla Foundation, using the independent Gecko rendering engine. The only major browser with a layout engine independent of Blink / Chromium. MPL-2.0 licensed.
+          cn: 由 Mozilla 基金会构建的现代网页浏览器，使用独立的 Gecko 渲染引擎。是唯一引擎不基于 Blink / Chromium 的主流浏览器。MPL-2.0 协议。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+          - docs/2-firefox.cn.md
+
+      - id: why-firefox
+        question:
+          en: Why use Firefox over Chrome?
+          cn: 为什么用 Firefox 而不是 Chrome？
+        answer:
+          en: Two reasons: (1) engine independence — Firefox is the only major browser not based on Blink or WebKit; (2) privacy defaults — Firefox ships Enhanced Tracking Protection, Total Cookie Protection, and container tabs on by default.
+          cn: 两个原因：（1）引擎独立性 —— Firefox 是唯一不基于 Blink 或 WebKit 的主流浏览器；（2）默认隐私 —— Firefox 默认开启增强跟踪保护、总 Cookie 保护、容器标签页。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+  - name:
+      en: install
+      cn: 安装
+    qa:
+      - id: how-to-install
+        question:
+          en: How do I install Firefox?
+          cn: 如何安装 Firefox？
+        answer:
+          en: Run x env use firefox, use a package manager (brew install --cask firefox on macOS, apt install firefox on Debian/Ubuntu, pacman -S firefox on Arch), or download from mozilla.org.
+          cn: 运行 x env use firefox，用包管理器（macOS 上 brew install --cask firefox，Debian/Ubuntu 上 apt install firefox，Arch 上 pacman -S firefox），或从 mozilla.org 下载。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: firefox-ios-webkit
+        question:
+          en: Does Firefox on iOS use Gecko?
+          cn: iOS 上的 Firefox 用 Gecko 吗？
+        answer:
+          en: No — Firefox for iOS uses WebKit due to Apple policy. Every iOS browser must use WebKit under the hood. Firefox for iOS has the same UI and sync but renders via WebKit.
+          cn: 不 —— Firefox for iOS 由于 Apple 政策使用 WebKit。每个 iOS 浏览器底层必须用 WebKit。iOS 版 Firefox 有相同的 UI 和同步，但通过 WebKit 渲染。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+  - name:
+      en: privacy
+      cn: 隐私
+    qa:
+      - id: etp
+        question:
+          en: What is Enhanced Tracking Protection?
+          cn: 什么是增强跟踪保护？
+        answer:
+          en: Firefox's on-by-default feature that blocks trackers, fingerprinters, and cryptominers. Three levels: Standard, Strict, Custom.
+          cn: Firefox 默认开启的功能，拦截跟踪器、指纹器、加密货币挖矿。三级：标准、严格、自定义。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: total-cookie-protection
+        question:
+          en: What is Total Cookie Protection?
+          cn: 什么是总 Cookie 保护？
+        answer:
+          en: Cookies are partitioned per first-party domain. A cookie set by Tracker X on Site A cannot be read when you visit Site B — even if both sites embed Tracker X.
+          cn: Cookie 按第一方域分区。Tracker X 在站点 A 设置的 Cookie，在访问站点 B 时无法被读取 —— 即使两个站点都嵌入了 Tracker X。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: container-tabs
+        question:
+          en: What are container tabs?
+          cn: 什么是容器标签页？
+        answer:
+          en: A Firefox feature that lets you open the same site in different containers with separate cookies. Built in Firefox Multi-Account Containers add-on. Useful for staying signed in to multiple Google / GitHub accounts.
+          cn: Firefox 的功能，让你用不同容器打开同一站点，Cookie 互相隔离。通过 Multi-Account Containers 扩展提供。用于同时登录多个 Google / GitHub 账户。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+  - name:
+      en: extensions
+      cn: 扩展
+    qa:
+      - id: manifest-v3
+        question:
+          en: Does Firefox support Manifest V3?
+          cn: Firefox 支持 Manifest V3 吗？
+        answer:
+          en: Yes — Firefox 138 (Aug 2026) is the first stable release with Manifest V3 enabled. Most extension developers are now MV3-first.
+          cn: 支持 —— Firefox 138（2026 年 8 月）是首个启用 MV3 的稳定版。大多数扩展开发者现在优先 MV3。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: chrome-extensions
+        question:
+          en: Can I use Chrome extensions in Firefox?
+          cn: 我能在 Firefox 里用 Chrome 扩展吗？
+        answer:
+          en: Most Chrome extensions work in Firefox via the WebExtensions API. Some MV3-specific Chrome-only features don't translate. Check addons.mozilla.org for Firefox versions.
+          cn: 大多数 Chrome 扩展通过 WebExtensions API 能在 Firefox 上工作。一些仅 Chrome 的 MV3 特定功能无法迁移。访问 addons.mozilla.org 查看 Firefox 版本。
+        confidence: 8
+        reference:
+          - docs/2-firefox.en.md
+
+  - name:
+      en: sync
+      cn: 同步
+    qa:
+      - id: how-sync-works
+        question:
+          en: How does Firefox Sync work?
+          cn: Firefox Sync 如何工作？
+        answer:
+          en: Requires a free Mozilla account. Syncs tabs, history, bookmarks, logins, and add-ons across devices. End-to-end encrypted with a passphrase (optional).
+          cn: 需要免费 Mozilla 账户。在设备间同步标签页、历史、书签、登录信息和扩展。可选用密码短语端到端加密。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: sync-without-account
+        question:
+          en: Can I sync without a Mozilla account?
+          cn: 不用 Mozilla 账户能同步吗？
+        answer:
+          en: No — Firefox Sync requires a Mozilla account. Without one, you lose sync. Everything else works fine.
+          cn: 不能 —— Firefox Sync 需要 Mozilla 账户。没有的话会失去同步。其他功能正常。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+  - name:
+      en: concepts
+      cn: 概念
+    qa:
+      - id: what-is-quantum
+        question:
+          en: What is the Quantum project?
+          cn: 什么是 Quantum 项目？
+        answer:
+          en: A 2017 project that brought multi-process architecture, parallel CSS rendering via Stylo, and GPU compositing to Firefox. Restored competitive performance.
+          cn: 2017 年的项目，给 Firefox 带来多进程架构、通过 Stylo 的并行 CSS 渲染、以及 GPU 合成。让 Firefox 重回有竞争力的性能。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
+
+      - id: what-is-fission
+        question:
+          en: What is Project Fission?
+          cn: 什么是 Project Fission？
+        answer:
+          en: Per-origin site isolation in Firefox. Each origin runs in its own OS process, defense in depth against Spectre-style attacks. Default since 2024.
+          cn: Firefox 中按源的站点隔离。每个源跑在自己的 OS 进程中，对抗 Spectre 类攻击的纵深防御。自 2024 年起默认开启。
+        confidence: 9
+        reference:
+          - docs/2-firefox.en.md
