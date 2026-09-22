@@ -1,0 +1,133 @@
+id: x-b-3-chrome
+
+data:
+  - name:
+      en: overview
+      cn: 概览
+    qa:
+      - id: what-is-chrome
+        question:
+          en: What is Chrome?
+          cn: 什么是 Chrome？
+        answer:
+          en: Google's web browser built on the Blink rendering engine. Cross-platform: Windows, macOS, Linux, Android, iOS. The flagship distribution of the open-source Chromium project.
+          cn: Google 的网页浏览器，基于 Blink 渲染引擎。跨平台：Windows、macOS、Linux、Android、iOS。开源 Chromium 项目的旗舰发行版。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+          - docs/3-chrome.cn.md
+
+      - id: chrome-vs-chromium
+        question:
+          en: What's the difference between Chrome and Chromium?
+          cn: Chrome 与 Chromium 有什么区别？
+        answer:
+          en: Chromium is the open-source upstream; Chrome is Google's distribution with proprietary services (Translate, Safe Browsing, Widevine DRM, sync, Gemini Nano). Same Blink + V8 engine; Chrome adds Google's services on top.
+          cn: Chromium 是开源上游；Chrome 是 Google 的发行版，带专有服务（翻译、安全浏览、Widevine DRM、同步、Gemini Nano）。同一 Blink + V8 引擎；Chrome 在此基础上加 Google 服务。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+  - name:
+      en: install
+      cn: 安装
+    qa:
+      - id: how-to-install
+        question:
+          en: How do I install Chrome?
+          cn: 如何安装 Chrome？
+        answer:
+          en: Run x env use google-chrome, use a package manager (brew install --cask google-chrome on macOS, yay -S google-chrome on Arch, .deb from Google on Debian/Ubuntu), or download from google.com/chrome.
+          cn: 运行 x env use google-chrome，用包管理器（macOS 上 brew install --cask google-chrome，Arch 上 yay -S google-chrome，Debian/Ubuntu 上从 Google 下载 .deb），或从 google.com/chrome 下载。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+      - id: chrome-ios-webkit
+        question:
+          en: Does Chrome on iOS use Blink?
+          cn: iOS 上的 Chrome 用 Blink 吗？
+        answer:
+          en: No — Chrome on iOS uses WebKit due to Apple policy. Same UI + sync as desktop Chrome, but renders via WebKit under the hood.
+          cn: 不 —— iOS 上 Chrome 由于 Apple 政策使用 WebKit。与桌面 Chrome 同样的 UI + 同步，但底层通过 WebKit 渲染。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+  - name:
+      en: features
+      cn: 功能
+    qa:
+      - id: gemini-nano
+        question:
+          en: What is Gemini Nano?
+          cn: 什么是 Gemini Nano？
+        answer:
+          en: Google's on-device large language model that ships in Chrome 138+ for Pro subscribers. Translate, summarize, draft — all running on-device for privacy.
+          cn: Google 自 Chrome 138+ 起为 Pro 订阅者提供的端侧大语言模型。翻译、摘要、起草——全部端侧运行以保护隐私。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+      - id: privacy-sandbox
+        question:
+          en: What is Privacy Sandbox?
+          cn: 什么是 Privacy Sandbox？
+        answer:
+          en: Chrome's replacement for third-party cookies: Topics API (interest-based ads), FLEDGE (on-device remarketing), Attribution API (conversion measurement). Phased rollout 2024-2026.
+          cn: Chrome 对第三方 Cookie 的替代：Topics API（基于兴趣的广告）、FLEDGE（端侧重定向）、Attribution API（转化测量）。2024–2026 渐进推出。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+      - id: sync-e2ee
+        question:
+          en: Does Chrome Sync support end-to-end encryption?
+          cn: Chrome 同步支持端到端加密吗？
+        answer:
+          en: Yes — opt in via a sync passphrase in chrome://sync-internals. New accounts may have it on by default.
+          cn: 支持 —— 在 chrome://sync-internals 中通过同步密码短语开启。新账户可能默认开启。
+        confidence: 8
+        reference:
+          - docs/3-chrome.en.md
+
+  - name:
+      en: extensions
+      cn: 扩展
+    qa:
+      - id: manifest-v3
+        question:
+          en: Does Chrome support Manifest V3?
+          cn: Chrome 支持 Manifest V3 吗？
+        answer:
+          en: Yes — Manifest V3 stable since Chrome 100. Manifest V2 was deprecated in 2024. Most extension authors are MV3-first.
+          cn: 支持 —— 自 Chrome 100 起 MV3 稳定。Manifest V2 于 2024 年弃用。大多数扩展作者现在优先 MV3。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+  - name:
+      en: concepts
+      cn: 概念
+    qa:
+      - id: what-is-blink
+        question:
+          en: What is Blink?
+          cn: 什么是 Blink？
+        answer:
+          en: Google's layout engine, forked from WebKit in 2013. Powers Chrome, Edge, Brave, Arc, Vivaldi, Opera, and ~76% of desktop share.
+          cn: Google 的排版引擎，2013 年从 WebKit fork。支撑 Chrome、Edge、Brave、Arc、Vivaldi、Opera，以及约 76% 桌面份额。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
+
+      - id: what-is-v8
+        question:
+          en: What is V8?
+          cn: 什么是 V8？
+        answer:
+          en: Chrome's JavaScript engine. First to ship JIT compilation, sparkplug compiler, and now WebAssembly + WebGPU support.
+          cn: Chrome 的 JavaScript 引擎。首发 JIT 编译、sparkplug 编译器，如今支持 WebAssembly + WebGPU。
+        confidence: 9
+        reference:
+          - docs/3-chrome.en.md
