@@ -1,0 +1,96 @@
+id: x-b-4-browser-ai-overview
+
+data:
+  - name:
+      en: inference
+      cn: 推理
+    qa:
+      - id: cloud-vs-local
+        question:
+          en: Cloud AI vs local AI — which is better?
+          cn: 云 AI vs 本地 AI——哪个更好？
+        answer:
+          en: Cloud AI is more capable (frontier models, fast on big queries) but sees your prompts and may log data. Local AI is more private (data stays on device) but limited to smaller models and needs modern hardware. Choose by threat model.
+          cn: 云 AI 更有能力（前沿模型，大查询快），但看到你的提示并可能记录数据。本地 AI 更隐私（数据留在设备上），但限于更小的模型且需要现代硬件。按威胁模型选择。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
+          - docs/4-browser-ai-overview.cn.md
+
+      - id: which-local
+        question:
+          en: Which browsers support local AI?
+          cn: 哪些浏览器支持本地 AI？
+        answer:
+          en: Safari (Apple Intelligence on-device by default, requires Apple silicon M1+), Brave (Leo local default), Chrome (Gemini Nano for Pro subscribers on supported hardware).
+          cn: Safari（Apple Intelligence 默认端侧，要求 Apple silicon M1+）、Brave（Leo 默认本地）、Chrome（Gemini Nano 给 Pro 订阅者在支持的硬件上）。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
+
+  - name:
+      en: hardware
+      cn: 硬件
+    qa:
+      - id: apple-silicon-local-llm
+        question:
+          en: Can I run local LLMs on Apple silicon?
+          cn: 我能在 Apple silicon 上跑本地 LLM 吗？
+        answer:
+          en: Yes — Apple silicon (M1+) has unified memory across CPU / GPU / NPU, making local LLMs efficient. 7B models (Llama, Mistral) run smoothly on M1 Pro / Max.
+          cn: 能 —— Apple silicon（M1+）有跨 CPU / GPU / NPU 的统一内存，让本地 LLM 高效。7B 模型（Llama、Mistral）在 M1 Pro / Max 上流畅运行。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
+
+      - id: npu-support
+        question:
+          en: Which chips support NPU-accelerated local LLMs?
+          cn: 哪些芯片支持 NPU 加速的本地 LLM？
+        answer:
+          en: Apple silicon (M1+), Snapdragon X (Qualcomm), Intel Core Ultra, AMD Ryzen AI. Older CPUs without NPU can run local LLMs on CPU / GPU but slower (>10s / token for 7B models).
+          cn: Apple silicon（M1+）、Snapdragon X（Qualcomm）、Intel Core Ultra、AMD Ryzen AI。较老的 CPU 没有 NPU，可以在 CPU / GPU 上跑本地 LLM 但更慢（7B 模型 >10s / token）。
+        confidence: 8
+        reference:
+          - docs/4-browser-ai-overview.en.md
+
+  - name:
+      en: ai overview
+      cn: ai overview
+    qa:
+      - id: get-cited
+        question:
+          en: How do I get cited in AI Overviews?
+          cn: 如何在 AI Overview 中被引用？
+        answer:
+          en: Long-form first-hand content (not SEO fluff); original data / research; clear expertise signals (author bio, credentials); structured data (Schema.org). AI Overviews skip fluff and prefer sources with citations.
+          cn: 长篇一手内容（不是 SEO 废话）；原创数据 / 研究；明确的专业信号（作者简历、凭据）；结构化数据（Schema.org）。AI Overview 跳过废话，偏好带引用的来源。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
+
+      - id: brave-leo-default
+        question:
+          en: Does Brave Leo run locally by default?
+          cn: Brave Leo 默认本地跑吗？
+        answer:
+          en: Yes — Brave Leo is local-first. Cloud models (Claude, Llama, others) are available on the paid tier. Brave claims conversations are not used for model training.
+          cn: 是的 —— Brave Leo 优先本地。云模型（Claude、Llama、其他）在付费层可用。Brave 声称对话不用于模型训练。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
+
+  - name:
+      en: ai overview
+      cn: ai overview
+    qa:
+      - id: no-ai-browser
+        question:
+          en: Which browser has no AI by default?
+          cn: 哪个浏览器默认没有 AI？
+        answer:
+          en: Vivaldi. Vivaldi's stance is "AI is a user choice, not a browser default." Optional integration with chatbots only.
+          cn: Vivaldi。Vivaldi 立场是 "AI 是用户选择，不是浏览器默认"。仅可选与 chatbot 集成。
+        confidence: 9
+        reference:
+          - docs/4-browser-ai-overview.en.md
