@@ -1,0 +1,96 @@
+id: x-b-2-browser-security-privacy
+
+data:
+  - name:
+      en: tracker protection
+      cn: 跟踪保护
+    qa:
+      - id: most-private-browser
+        question:
+          en: Which browser has the strongest privacy defaults?
+          cn: 哪个浏览器有最强的隐私默认？
+        answer:
+          en: Tor Browser (uniform fingerprinting + Tor network). Among mainstream browsers, Firefox Strict ETP / Total Cookie Protection is the strictest. Brave Aggressive Shields is also strict; adds built-in VPN + firewall.
+          cn: Tor Browser（统一指纹识别 + Tor 网络）。主流浏览器中，Firefox 严格 ETP / 总 Cookie 保护最严。Brave Aggressive Shields 也很严；加内置 VPN + 防火墙。
+        confidence: 8
+        reference:
+          - docs/2-browser-security-privacy.en.md
+          - docs/2-browser-security-privacy.cn.md
+
+      - id: chrome-vs-firefox-privacy
+        question:
+          en: Chrome or Firefox — which is more private?
+          cn: Chrome 还是 Firefox——哪个更隐私？
+        answer:
+          en: Firefox in 2026. Chrome's Privacy Sandbox replaces 3P cookies via Topics API / FLEDGE / Attribution API but the rollout is incomplete. Firefox's ETP + Total Cookie Protection blocks cross-site tracking at the cookie level — stricter and simpler.
+          cn: 2026 年是 Firefox。Chrome 的 Privacy Sandbox 通过 Topics API / FLEDGE / Attribution API 取代 3P cookie，但推出未完成。Firefox 的 ETP + 总 Cookie 保护在 cookie 层屏蔽跨站跟踪——更严且更简单。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
+
+  - name:
+      en: sandbox
+      cn: 沙箱
+    qa:
+      - id: which-sandbox
+        question:
+          en: Which browser has the best sandbox?
+          cn: 哪个浏览器有最好的沙箱？
+        answer:
+          en: All three major engines have mature sandboxes. Chromium has multi-process site isolation since 2018; Firefox matched with Project Fission (default since 2024); WebKit uses OS-level sandboxing (macOS Sandbox on macOS, stricter on iOS).
+          cn: 三大主流引擎都有成熟沙箱。Chromium 自 2018 起多进程站点隔离；Firefox Project Fission（自 2024 默认）持平；WebKit 用 OS 级沙箱（macOS 上 Sandbox，iOS 上更严）。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
+
+  - name:
+      en: private browsing
+      cn: 私密浏览
+    qa:
+      - id: incognito-anonymous
+        question:
+          en: Does Incognito / Private browsing make me anonymous?
+          cn: 隐身 / 私密浏览让我匿名吗？
+        answer:
+          en: No. Private browsing blocks local tracking (no history / cookies after the window closes) but does NOT make you anonymous to the websites you visit, your employer, or your ISP. For real anonymity, use Tor Browser.
+          cn: 不。私密浏览屏蔽本地跟踪（窗口关闭后无历史 / cookie），但**不**让你对你访问的网站、雇主或 ISP 匿名。需要真正匿名，请用 Tor Browser。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
+
+      - id: private-vs-tor
+        question:
+          en: Private browsing vs Tor Browser?
+          cn: 私密浏览 vs Tor Browser？
+        answer:
+          en: Private browsing is for local-privacy (no history, no cookies). Tor Browser is for network-anonymity (Tor network + uniform fingerprinting). Different threat models.
+          cn: 私密浏览针对本地隐私（无历史、无 cookie）。Tor Browser 针对网络匿名（Tor 网络 + 统一指纹识别）。不同威胁模型。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
+
+  - name:
+      en: phishing
+      cn: 钓鱼
+    qa:
+      - id: safe-browsing-all
+        question:
+          en: Do all browsers use Google Safe Browsing?
+          cn: 所有浏览器都用 Google Safe Browsing 吗？
+        answer:
+          en: Yes — Chrome, Firefox, Brave, Arc all use it. Safari uses Tencent + Apple proxy in China and Google Safe Browsing elsewhere. Edge uses Microsoft Defender SmartScreen instead.
+          cn: 是 —— Chrome、Firefox、Brave、Arc 都用它。Safari 在中国用腾讯 + Apple 代理，在其他地方用 Google Safe Browsing。Edge 改用 Microsoft Defender SmartScreen。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
+
+      - id: passkeys
+        question:
+          en: Why are Passkeys / WebAuthn important?
+          cn: 为什么 Passkey / WebAuthn 重要？
+        answer:
+          en: Passkeys are phishing-resistant — the cryptographic key is bound to the domain. Even if a user lands on a phishing page, the browser won't transmit the credential to the wrong origin. AI-generated phishing pages are a 2026 threat; Passkeys are the strongest defense.
+          cn: Passkey 抗钓鱼——加密密钥绑定到域。即便用户落在钓鱼页面上，浏览器也不会把凭据传到错误的源。AI 生成的钓鱼页面是 2026 年威胁；Passkey 是最强防御。
+        confidence: 9
+        reference:
+          - docs/2-browser-security-privacy.en.md
