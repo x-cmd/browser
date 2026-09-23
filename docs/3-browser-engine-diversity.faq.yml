@@ -1,0 +1,81 @@
+id: x-b-3-browser-engine-diversity
+
+data:
+  - name:
+      en: engines
+      cn: 引擎
+    qa:
+      - id: three-engines
+        question:
+          en: What are the three surviving browser engines?
+          cn: 什么是三个存活的浏览器引擎？
+        answer:
+          en: Gecko (Mozilla Firefox + forks: LibreWolf / Tor Browser / Zen / Waterfox), WebKit (Apple Safari + every iOS browser), Blink (Google Chrome + forks: Edge / Brave / Arc / Vivaldi / Opera).
+          cn: Gecko（Mozilla Firefox + fork：LibreWolf / Tor Browser / Zen / Waterfox）、WebKit（Apple Safari + 每个 iOS 浏览器）、Blink（Google Chrome + fork：Edge / Brave / Arc / Vivaldi / Opera）。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
+          - docs/3-browser-engine-diversity.cn.md
+
+      - id: market-share
+        question:
+          en: What's the desktop market share of each engine?
+          cn: 每个引擎的桌面市场份额是多少？
+        answer:
+          en: Blink ~76%, WebKit ~17%, Gecko ~6%, other <1% (StatCounter Q2 2026). Blink-based browsers are the dominant engine.
+          cn: Blink 约 76%、WebKit 约 17%、Gecko 约 6%、其他 <1%（StatCounter 2026 Q2）。Blink 系浏览器是主导引擎。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
+
+  - name:
+      en: monoculture
+      cn: 单一化
+    qa:
+      - id: why-monoculture-bad
+        question:
+          en: Why is engine monoculture bad?
+          cn: 为什么引擎单一化不好？
+        answer:
+          en: Four reasons: (1) bugs in one engine affect everyone (e.g. iOS Safari ITP 2024); (2) engines can be abandoned (EdgeHTML 2018, Presto 2013); (3) web standards benefit from multi-vendor input; (4) one company shapes what runs in browsers.
+          cn: 四个原因：（1）一个引擎的 bug 影响所有人（如 iOS Safari ITP 2024）；（2）引擎可能被放弃（EdgeHTML 2018、Presto 2013）；（3）web 标准受益于多厂商投入；（4）单一公司塑造浏览器中跑的内容。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
+
+      - id: gecko-dead
+        question:
+          en: What happens if Gecko dies?
+          cn: 如果 Gecko 死了会怎样？
+        answer:
+          en: The web becomes 76% Blink + 17-30% WebKit + 0% Gecko. Web standards work happens only at Google + Apple. Mozilla's role as an independent voice in WHATWG / W3C ends. First-to-implement standards work, privacy advocacy, and alternative UI patterns all vanish.
+          cn: Web 变成 76% Blink + 17-30% WebKit + 0% Gecko。Web 标准工作仅在 Google + Apple 处。Mozilla 作为 WHATWG / W3C 独立声音的角色终结。先实现标准的工作、隐私倡导、替代 UI 模式都消失。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
+
+  - name:
+      en: ios
+      cn: ios
+    qa:
+      - id: ios-engine
+        question:
+          en: Can I use Blink or Gecko on iOS?
+          cn: 我能在 iOS 上用 Blink 或 Gecko 吗？
+        answer:
+          en: No — Apple App Store policy requires every browser on iOS to use WebKit under the hood. Chrome for iOS, Firefox for iOS, Brave for iOS all render via WebKit, not Blink or Gecko.
+          cn: 不能 —— Apple App Store 政策要求 iOS 上的每个浏览器底层必须用 WebKit。Chrome for iOS、Firefox for iOS、Brave for iOS 都通过 WebKit 渲染，不是 Blink 或 Gecko。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
+
+      - id: how-to-support
+        question:
+          en: How do I support engine diversity?
+          cn: 如何支持引擎多样性？
+        answer:
+          en: Use Firefox as primary; use Safari on Apple devices; donate to Mozilla; report webcompat bugs to all browsers; test sites in Firefox before shipping; avoid vendor-prefix features.
+          cn: 以 Firefox 为主；在 Apple 设备上用 Safari；捐给 Mozilla；向所有浏览器报告 webcompat bug；发布前在 Firefox 测试；避免厂商前缀特性。
+        confidence: 9
+        reference:
+          - docs/3-browser-engine-diversity.en.md
